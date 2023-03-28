@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.Navbar-container{
+  position: relative;
+}
+
+.main_div{
+  display: flex;
+  height: 100vh;
+  /* overflow-y: hidden; */
+}
+
+
+.sidebar_div{
+  width: 20%;
+  height: 100vh;
+  overflow: hidden;
+ 
+}
+.sidebar_div:hover{
+  overflow-y:scroll;
+  height: 100vh;
+}
+
+.sidebar_div::-webkit-scrollbar{
+  width: 10px;
+  
+}
+
+.sidebar_div::-webkit-scrollbar-track{
+  background-color: rgb(0, 0, 0);
+}
+.sidebar_div::-webkit-scrollbar-thumb{
+  border-radius: 20px;
+  height: 100px;
+  background-color: rgb(145, 144, 144);
+}
+
+.card_div{
+  width: 80%;
+  height: 100vh;
+  /* z-index: -1; */
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+  position: fixed;
+  z-index: 1;
+  width: 80%;
+  background-color: black;
+}
+
+.cards{
+  /* border: 2px solid blue; */
+  display: grid; 
+  grid-template-columns: repeat(3 ,1fr);
+  border: 2px solid blue;
+  gap: 10px;
+  height: 100vh; 
+  z-index: -1;
+  overflow-y: auto;
+}
+
+.hrule{
+  /* border: 1px solid rgb(222, 216, 216); */
+  border: 2px solid red;
+  width: 100%;
+}
+.shorts_container{
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}

@@ -1,0 +1,45 @@
+.main_side_div{
+    padding: 0 20px;
+    position: sticky;
+    left: 0;
+    right: 0;
+}
+.sidebar_common{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 10px ;
+    margin: 5px 0;
+}
+
+.home, .sidebar_common:hover {
+    background-color: rgb(40, 38, 38);
+    border-radius: 10px;
+}
+ 
+.home_icon{
+    height: 28px;
+    width: 28px;
+}
+.home_text{
+    font-size: 17px;
+    font-weight: 15;
+}
+
+.hrule{
+    border: 0.8px solid gray;
+    margin: 10px 0;
+}
+
+.sub{
+    font-weight: 30;
+}
+.pic1{
+    height: 28px;
+    width: 28px;
+    clip-path: circle(); 
+}
+.col{
+    color: red;
+}

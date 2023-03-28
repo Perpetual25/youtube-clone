@@ -1,0 +1,14 @@
+.btn_container{
+    display: flex;
+   
+  
+}
+.all{
+    background-color: rgb(33, 31, 31);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 300px;
+}
+.btn_container :hover{
+    background-color: rgb(51, 46, 46);
+}
