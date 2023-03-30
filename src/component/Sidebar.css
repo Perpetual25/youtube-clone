@@ -1,8 +1,7 @@
 .main_side_div{
     padding: 0 20px;
-    position: sticky;
-    left: 0;
-    right: 0;
+    max-height: 90vh;
+    overflow-y: scroll;
 }
 .sidebar_common{
     display: flex;

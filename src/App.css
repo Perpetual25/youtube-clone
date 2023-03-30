@@ -10,30 +10,26 @@ body{
   font-family: 'Roboto', sans-serif;
   background-color: black;
   color: white;
-  height: 100vh;
-  overflow-y: hidden;
+  /* height: 100vh; */
 }
 .Navbar-container{
   position: relative;
 }
-
 .main_div{
   display: flex;
-  height: 100vh;
-  /* overflow-y: hidden; */
+  overflow-y: scroll;
 }
 
 
 .sidebar_div{
   width: 20%;
-  height: 100vh;
-  overflow: hidden;
+  /* height: 100vh; */
+  /* overflow: hidden; */
+  overflow-y:scroll;
+
  
 }
-.sidebar_div:hover{
-  overflow-y:scroll;
-  height: 100vh;
-}
+
 
 .sidebar_div::-webkit-scrollbar{
   width: 10px;
@@ -51,8 +47,7 @@ body{
 
 .card_div{
   width: 80%;
-  height: 100vh;
-  /* z-index: -1; */
+
 }
 
 .btn{
@@ -60,21 +55,32 @@ body{
   align-items: center;
   padding: 5px;
   gap: 10px;
-  position: fixed;
-  z-index: 1;
-  width: 80%;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: scroll;
   background-color: black;
 }
 
+.btn::-webkit-scrollbar-thumb{
+background: #ffffff3e;
+}
+
+.btn::-webkit-scrollbar{
+background: none;
+ height: 4px;
+}
+
 .cards{
-  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.card_shorts{
   display: grid; 
   grid-template-columns: repeat(3 ,1fr);
   border: 2px solid blue;
   gap: 10px;
-  height: 100vh; 
-  z-index: -1;
-  overflow-y: auto;
+
 }
 
 .hrule{
