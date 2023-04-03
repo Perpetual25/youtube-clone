@@ -1,7 +1,3 @@
-/* .flex{
-    position: relative;
-} */
-
 
 
 .round{
@@ -50,12 +46,13 @@
     color: rgb(192, 199, 205);
     font-weight: 100;
 }
+.img_time{
+    display: block;
+}
 .time{
     position: absolute;
     color: white;
     background: rgb(37, 36, 36);
     border-radius: 2px;
-    bottom: 0;
-    right: 0;
-
+    margin-bottom: 5rem;
 }

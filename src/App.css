@@ -12,6 +12,9 @@ body{
   color: white;
   /* height: 100vh; */
 }
+body::-webkit-scrollbar{
+  display: none;
+}
 .Navbar-container{
   position: relative;
 }
@@ -23,11 +26,7 @@ body{
 
 .sidebar_div{
   width: 20%;
-  /* height: 100vh; */
-  /* overflow: hidden; */
   overflow-y:scroll;
-
- 
 }
 
 
@@ -39,6 +38,7 @@ body{
 .sidebar_div::-webkit-scrollbar-track{
   background-color: rgb(0, 0, 0);
 }
+
 .sidebar_div::-webkit-scrollbar-thumb{
   border-radius: 20px;
   height: 100px;
@@ -47,8 +47,12 @@ body{
 
 .card_div{
   width: 80%;
-
 }
+
+.card_div::-webkit-scrollbar{
+  display: none;
+}
+
 
 .btn{
   display: flex;
